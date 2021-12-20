@@ -1,0 +1,64 @@
+.card-fp {
+    width: 250.6pt;
+    height: 124pt;
+    background: #F8F8F8;
+    border-radius: 8pt;
+    border-style: solid;
+    border-color: #D8D6D7;
+    border-width: 1px;
+    fill-opacity: 1;
+    position: relative;
+    margin-top: 30pt;
+    margin-left: 514.7pt;
+    font-family: 'Calibri';
+}
+
+.enter {
+    margin-left: 14pt;
+    margin-top: 15pt;
+    font-size: 10.5pt;
+    font-weight: bold;
+    font-family: 'Arial';
+}
+
+.form-fp {
+    padding-top: 9pt;
+}
+
+.form-fp input {
+    width: 214pt;
+    height: 24pt;
+    margin-left: 12.4pt;
+    border-style: solid;
+    border-color: #D8D6D7;
+    border-width: 1px;
+    border-radius: 4pt;
+    padding-left: 12px;
+    font-size: 10.5pt;
+    background-color: #FDFDFD;
+    opacity: 0.9;
+}
+
+.form-fp input:focus {
+    outline: none !important;
+    border:0.5px solid black;
+    box-shadow: 0 0 3px #707070;
+}
+
+.forgot-submit-div {
+    margin-left: 75pt;
+    padding-top: 22pt;
+}
+
+.forgot-submit-button {
+    font-size: 11pt;
+    font-weight: bold;
+    height: 22.9pt;
+    width: 94.6pt;
+    border-color: #707070;
+    border-width: 1pt;
+    border-radius: 4pt;
+    background-color: #5344B9;
+    color: #FFFDFA;
+    cursor: pointer;
+}

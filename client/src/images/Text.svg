@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520.5" height="350" viewBox="0 0 520.5 350" class="Text">
+  <defs>
+    <style>
+      .cls-1, .cls-4, .cls-5, .cls-7, .cls-8 {
+        fill: #252324;
+      }
+
+      .cls-1 {
+        stroke: #707070;
+      }
+
+      .cls-2 {
+        fill: #fdfdfd;
+        font-size: 78px;
+      }
+
+      .cls-2, .cls-6, .cls-7, .cls-8 {
+        stroke: #252324;
+      }
+
+      .cls-2, .cls-7 {
+        font-family: RockoFLF;
+      }
+
+      .cls-3, .cls-4 {
+        letter-spacing: 0.01em;
+      }
+
+      .cls-10, .cls-6 {
+        fill: none;
+      }
+
+      .cls-6 {
+        stroke-width: 4px;
+      }
+
+      .cls-7, .cls-8 {
+        font-size: 20px;
+      }
+
+      .cls-8 {
+        font-family: Calibri-LightItalic, Calibri;
+        font-weight: 300;
+        font-style: italic;
+      }
+
+      .cls-9 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <g id="Text" transform="translate(-293.5 -327)">
+    <g id="Rectangle_2" data-name="Rectangle 2" class="cls-1" transform="translate(294 327)">
+      <rect class="cls-9" width="112" height="101"/>
+      <rect class="cls-10" x="0.5" y="0.5" width="111" height="100"/>
+    </g>
+    <text id="Logo" class="cls-2" transform="translate(297 411)"><tspan x="0" y="0">P</tspan><tspan class="cls-3" y="0">R</tspan><tspan class="cls-4" y="0">E</tspan><tspan class="cls-5" y="0">LUDE</tspan></text>
+    <line id="Line_4" data-name="Line 4" class="cls-6" x2="520" transform="translate(294 436)"/>
+    <text id="Let_the_music_take_you_away...." data-name="Let the music take you away...." class="cls-7" transform="translate(297 469)"><tspan x="0" y="0">Let the music take you away....</tspan></text>
+    <text id="Music_is_the_great_uniter._An_incredible_force._Something_that_people_who_differ_on_everything_and_anything_else_can_have_in_common." data-name="Music is the great uniter. An incredible force. Something that people who differ on everything and anything else can have in common." class="cls-8" transform="translate(294.5 571.5)"><tspan x="0" y="19">Music is the great uniter. An incredible force. Something </tspan><tspan x="0" y="43">that people who differ on everything and anything else can </tspan><tspan x="0" y="67">have in common.</tspan></text>
+    <text id="_-_Sarah_Dessen" data-name="- Sarah Dessen" class="cls-8" transform="translate(643 671)"><tspan x="0" y="0">- Sarah Dessen</tspan></text>
+  </g>
+</svg>

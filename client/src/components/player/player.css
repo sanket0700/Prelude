@@ -1,0 +1,121 @@
+.entire-player {
+    width: 280pt;
+    height: 300pt;
+    align-self: center;
+    align-items: center;
+    border: none;
+    border-radius: 10pt;
+    justify-content: center;
+    margin-left: 507pt;
+}
+
+.cover-player {
+    display: flex;
+    padding-top: 10%;
+    width: 500pt;
+    height: 180pt;
+}
+
+.cover-player img{
+    width: 240pt;
+    height: 240pt;
+    border-radius: 6pt;
+    border-color: #2F2D2E;
+    box-shadow: 0.5pt 0.5pt 40pt #252324;
+}
+
+
+.player-song{
+    justify-content: center;
+    align-items: center;
+}
+
+.progbar div {
+    padding: 5pt;
+}
+
+.range-bar {
+    appearance: none;
+    width: 210pt;
+    height: 4pt;
+    background: #585657;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.range-bar::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 8pt;
+    width: 8pt;
+    border-radius: 50%;
+    border: none;
+    background-color: blueviolet;
+    cursor: pointer;
+}
+
+.range-bar:active::-webkit-slider-thumb {
+    transform: scale(1.4);
+}
+
+.range-bar:hover::-webkit-slider-thumb {
+    transform: scale(1.4);
+}
+
+.progbar {
+    align-items: center;
+    margin-top: 13pt;
+    display: inline-flex;
+    margin-left: -14pt;
+}
+
+.curr {
+    margin-top: 3.5pt;
+}
+
+.complete {
+    margin-top: 3.5pt;
+}
+
+.controls {
+    margin-top: 2pt;
+    margin-left: 68pt;
+    align-items: center;
+    display: inline-flex;
+}
+
+#player-button {
+    background: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 34pt;
+}
+
+.like-player {
+    padding-top: 8pt;
+    padding-left: 10pt;
+    width: 16pt;
+    height: 16pt;
+    position: sticky;
+}
+
+.details-song {
+    margin-top: 84pt;
+    margin-left: -152pt;
+}
+
+.give-name {
+    font-family: 'Calibri';
+    font-size: 23pt;
+    font-weight: bolder;
+}
+
+.give-artist {
+    margin-top: -3pt;
+    margin-left: 166pt;
+    font-family: 'Calibri';
+    font-size: 11pt;
+    font-weight: bold;
+}

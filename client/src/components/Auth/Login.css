@@ -1,0 +1,149 @@
+.card {
+    width: 250.6pt;
+    height: 343pt;
+    background: #F8F8F8;
+    border-radius: 8pt;
+    border-style: solid;
+    border-color: #D8D6D7;
+    border-width: 1px;
+    fill-opacity: 1;
+    position: relative;
+    margin-top: 30pt;
+    margin-left: 792pt;
+    font-family: 'Calibri';
+}
+
+.form {
+    padding-top: 24pt;
+}
+
+.form-group {
+    padding-top: 5pt;
+}
+
+.form-group input {
+    width: 214pt;
+    height: 24pt;
+    margin-left: 12.4pt;
+    border-style: solid;
+    border-color: #D8D6D7;
+    border-width: 1px;
+    border-radius: 4pt;
+    padding-left: 12px;
+    font-size: 10.5pt;
+    background-color: #FDFDFD;
+    opacity: 0.9;
+}
+
+.form-group input:focus {
+    outline: none !important;
+    border:0.5px solid black;
+    box-shadow: 0 0 3px #707070;
+}
+
+p {
+    padding-top: 2.5pt;
+    margin-left: 166pt;
+    font-size: 8.5pt;
+}
+
+p a {
+    text-decoration: none;
+    color: #5344B9;
+}
+
+.login-div {
+    margin-left: 58pt;
+    padding-top: 26pt;
+}
+
+.login-button {
+    font-size: 12.5pt;
+    font-weight: bold;
+    height: 22.9pt;
+    width: 134.6pt;
+    border-color: #707070;
+    border-width: 1pt;
+    border-radius: 4pt;
+    background-color: #5344B9;
+    color: #FFFDFA;
+    cursor: pointer;
+}
+
+.separator{
+    display: flex;
+    align-items: center;
+    padding-top: 34pt;
+}
+  
+.separator h2{
+    padding: 0 0.3rem;
+    font-size: 12.3pt;
+    color: #707070;
+    opacity: 0.9;
+    font-weight: 200;
+}
+
+.separator .line1{
+    margin-left: 10pt;
+    flex: 2;
+    height: 0.5px;
+    opacity: 0.5;
+    background-color: #707070;
+}
+
+.separator .line2 {
+    flex: 2;
+    height: 0.5px;
+    background-color: #707070;
+    opacity: 0.5;
+    margin-right: 10pt;
+}
+
+.login-spotify {
+    display: inline-block;
+    align-items: center;
+    padding-top: 34pt;
+    margin-left: 61pt;
+}
+
+.login-spotify p {
+    float: right;
+    margin-left: 6pt;
+    font-size: 14.3pt;
+    color: #234421;
+    font-family: 'Calibri';
+    cursor: not-allowed;
+}
+
+.ls-logo {
+    /* margin-left: 100pt; */
+    height: 15pt;
+    padding-top: 4pt;
+    cursor: not-allowed;
+}
+
+.signup {
+    padding-top: 68pt;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#p1 {
+    font-size: 11pt;
+    font-family: 'Calibri';
+    margin-left: 0pt;
+}
+
+#p2 {
+    font-size: 11pt;
+    font-family: 'Calibri';
+    margin-left: 3pt;
+    float: right;
+    align-self: flex-end;
+    color: #5344B9;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+}

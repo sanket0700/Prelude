@@ -1,0 +1,10 @@
+*:not(i) {
+    margin:0;
+    font-family: ArialMT, Arial;
+    color: #252324;
+}
+
+body {
+    /* background: linear-gradient(to bottom, #FFFFFF, #E0E0E0) fixed; */
+    background-image: url("./images/Background.png");
+  }

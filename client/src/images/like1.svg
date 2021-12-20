@@ -1,0 +1,18 @@
+<?xml version="1.0"?><svg width="640" height="480" xmlns="http://www.w3.org/2000/svg">
+ <title>pink heart</title>
+ <defs>
+  <linearGradient id="svg_1" x1="0" y1="0" x2="1" y2="1">
+   <stop offset="0" stop-color="#ff0000"/>
+   <stop offset="1" stop-color="#ffff00"/>
+  </linearGradient>
+  <linearGradient id="svg_2" x1="0" y1="0" x2="1" y2="1">
+   <stop offset="0" stop-color="#ff0000"/>
+   <stop offset="1" stop-color="#ffff00"/>
+  </linearGradient>
+ </defs>
+ <metadata id="metadata3547">image/svg+xml</metadata>
+ <g>
+  <title>Layer 1</title>
+  <path fill="#ffffff" fill-rule="evenodd" stroke="#ff007f" stroke-width="0" stroke-linejoin="round" stroke-miterlimit="4" id="path2361" d="m211.88298,22.34021c-137.447098,-2.471161 -264.63855,212.481247 105.925735,435.340698c0.406281,-0.73114 1.968781,-0.73114 2.375031,0c382.517975,-230.048691 234.665131,-451.640168 92.625702,-434.390629c-55.372711,6.724491 -81.503326,37.456451 -93.813263,63.887974c-12.309845,-26.431522 -38.440552,-57.163483 -93.81308,-63.887974c-4.438782,-0.539268 -8.866302,-0.87019 -13.300125,-0.95006l0,-0.00001z"/>
+ </g>
+</svg>

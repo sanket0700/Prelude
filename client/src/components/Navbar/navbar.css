@@ -1,0 +1,31 @@
+.navbar {
+    font-size: 14.5pt;
+    font-weight: 600;
+    padding: 20px;
+    padding-top: 52px;
+    display: flex;
+    align-items: center;
+    max-width: auto;
+    margin: 0 auto;
+}
+
+.navbar .links {
+    margin-left: auto;
+    padding-right: 110px;
+}
+
+.navbar a {
+    margin-left: 84px;
+    text-decoration: none;
+    padding: 6px;
+}
+
+.navbar img {
+    padding-left: 110px;
+}
+
+.navbar a:hover {
+    transition: 0.25s;
+    animation-fill-mode: forwards;
+    font-size: 17pt;
+}
