@@ -7,6 +7,7 @@ const path = require('path');
 const {GridFsStorage} = require('multer-gridfs-storage');
 const song = require('./models/song');
 const crypto = require('crypto');
+require('dotenv').config();
 
 
 const app = express();
@@ -19,7 +20,7 @@ app.use('/user', require('./routes/user'));
 
 
 
-const CONNECTION_URL = "MONGO_URI";
+const CONNECTION_URL = process.env.MONGODB_CONNECTION_STRING;
 const PORT = process.env.PORT || 5000;
 
 
@@ -32,7 +33,7 @@ mongoose.connect(CONNECTION_URL, { useNewUrlParser: true, useUnifiedTopology: tr
 
 const storage = new GridFsStorage({
     
-    url: 'MONGO_URI',
+    url: CONNECTION_URL,
     file: (req, file) => {
         return new Promise((resolve, reject) => {
             crypto.randomBytes(16, (err, buf) => {
