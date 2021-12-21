@@ -43,7 +43,7 @@ const About = () => {
                         <li>Search a song</li>
                         <li>Play a song (only after logging in)</li>
                         <li>Add a song to his/her favourites (only after logging in)</li>
-                        <li>Visit our <a href='/'>GitHub repository</a></li>
+                        <li>Visit our <a href='https://github.com/sanket0700/Prelude' target="_blank">GitHub repository</a></li>
                     </ul>
                 </p>
             </div>
