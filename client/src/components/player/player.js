@@ -24,7 +24,7 @@ const Player = () => {
     const location = useLocation();
     const [ songReferenceID, setSongReferenceID ] = useState("");
     const [ cover, setCover ] = useState("");
-    const [ liked, setLiked ] = useState("");
+    const [ songLiked, setSongLiked ] = useState("");
     const [ name, setName ] = useState(null);
     const [ artist, setArtist ] = useState("");
     const [ flag, setFlag ] = useState(false);
@@ -48,33 +48,30 @@ const Player = () => {
     useEffect(() => {
         setSongReferenceID(location.state.reference);
         setCover(location.state.cover);
-        setLiked(location.state.liked);
+        setSongLiked(location.state.liked);
         setName(location.state.name);
         setArtist(location.state.artistName);
         setFlag(true);
     }, [location, flag]);
 
     
-    // async function sendLikedUpdate(ll) {
-    //     const confirmation = await fetch((`/user/updateLikedSong/${user.email}`), {
-    //         method: 'POST',
-    //         headers: {
-    //             'Content-Type' : 'application/json',
-    //         },
-    //         body: JSON.stringify({
-    //             song: songReferenceID,
-    //             liked: ll
-    //         })
-    //     });
+    async function sendLikedUpdate(flag) {
+        const confirmation = await fetch((`/user/updateLikedSong/${user.email}`), {
+            method: 'POST',
+            headers: {
+                'Content-Type' : 'application/json',
+            },
+            body: JSON.stringify({
+                song: songReferenceID,
+                liked: flag
+            })
+        });
 
-    //     if(confirmation.status===500){
-    //         console.log("error")
-    //     }
-    // }
-
-    const likeToggle = () => {
-        // sendLikedUpdate(!l);
+        if(confirmation.status===500){
+            console.log("error")
+        }
     }
+
 
     const togglePlay = () => {
         const prevValue = isPlaying;
@@ -87,7 +84,7 @@ const Player = () => {
     }
     
     const changeProg = (e) => {
-        audioPlayer.current.currentTime = duration*100/e.target.value;
+        audioPlayer.current.currentTime = (duration/100)*e.target.value;
         setPercentage(e.target.value);
     }
 
@@ -97,17 +94,14 @@ const Player = () => {
             <div className="entire-player">
                 <div className="cover-player">
                     <img src={`/cover-art/${cover}`} className="song-cover-art" alt={name} />
-                    <div className="like-player"  onClick={likeToggle}>
-                        { liked ?
-                            <FormControlLabel id="like-icon-player"
-                                control={<Checkbox checkedIcon={<FavoriteBorder style={{fill: "black", width: "25", height: "24"}}/>} 
-                                        icon={<Favorite style={{fill: "red", width: "25", height: "24"}}/> }
-                                />}
-                            />
-                            :
-                            <FormControlLabel id="like-icon-player"
-                                control={<Checkbox icon={<FavoriteBorder style={{fill: "black", width: "25", height: "24"}}/>} 
-                                        checkedIcon={<Favorite style={{fill: "red", width: "25", height: "24"}}/> }
+                    <div className="like-player">
+                        {
+                            <FormControlLabel id="like-icon-player" onChange={(e) => {
+                                    setSongLiked(e.target.checked);
+                                    sendLikedUpdate(e.target.checked);
+                                }}
+                                control={<Checkbox checked={songLiked} icon={<FavoriteBorder style={{fill: "black", width: "25", height: "24"}}/>} 
+                                        checkedIcon={<Favorite style={{fill: "red", width: "25", height: "24"}} />}
                                 />}
                             />
                         }

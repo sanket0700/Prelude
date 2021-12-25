@@ -26,7 +26,7 @@ const PORT = process.env.PORT || 5000;
 
 
 mongoose.connect(CONNECTION_URL, { useNewUrlParser: true, useUnifiedTopology: true })
-    .then(() => app.listen(PORT, () => console.log(`Server running on port: ${PORT}`)))
+    .then(() => console.log("Connected to MongoDB"))
     .catch((error) => console.log(error.message));
 
 
@@ -143,3 +143,14 @@ app.get('/cover-art/:reference', async(req, res) => {
         return res.status(500).json({ message: "Something went wrong!" });
     }
 })
+
+
+
+app.use(express.static(path.resolve(__dirname, "./client/build")));
+
+app.get("*", function (request, response) {
+  response.sendFile(path.resolve(__dirname, "./client/build", "index.html"));
+});
+
+
+app.listen(PORT, () => console.log(`Server running on port: ${PORT}`));
